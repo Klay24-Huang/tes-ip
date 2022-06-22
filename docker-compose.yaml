@@ -5,7 +5,7 @@ services:
     container_name: test-ip-service
     build:
       context: .
-      dockerfile: .dockerfile
+      dockerfile: dockerfile
     ports:
       - "7071:7071"
     restart: always
