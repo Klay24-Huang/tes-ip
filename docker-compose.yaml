@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  server:
+    container_name: test-ip-service
+    build:
+      context: .
+      dockerfile: .dockerfile
+    ports:
+      - "7071:7071"
+    restart: always
+  
+
