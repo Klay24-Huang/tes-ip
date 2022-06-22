@@ -8,5 +8,6 @@ FROM scratch
 COPY --from=build /main /main
 ENTRYPOINT ["/main"]
 
-# cmd: docker build -f dockerfile .  -t test_ip_service
-# docker run --rm -p 7071:7071 -d test_ip_service
+# cmd: docker build -f dockerfile .  -t test-ip-service
+# docker run --rm -p 7071:7071 -d test-ip-service
+# docker run --rm -p 7071:7071 -d vitohuang852/test-ip-service

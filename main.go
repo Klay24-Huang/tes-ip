@@ -87,6 +87,8 @@ func cleanupVisitors() {
 }
 
 func getIp(r *http.Request) (ip string, err error) {
+	// 取得真正的Ip
+	// https://devco.re/blog/2014/06/19/client-ip-detection/
 	ip, _, err = net.SplitHostPort(r.RemoteAddr)
 	return
 }

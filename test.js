@@ -1,4 +1,5 @@
-function TestIp(requestCount = 120, url = 'http://localhost:7071/') {
+function TestIp(env = 'local', requestCount = 120, ) {
+    let url = env == 'online' ? 'https://test-ip-service-klay24-huang.cloud.okteto.net' : 'http://localhost:7071/'
     let promises = []
     for (let index = 0; index < requestCount; index++) {
         let request = fetch(url)
@@ -30,4 +31,8 @@ function TestIp(requestCount = 120, url = 'http://localhost:7071/') {
     })
 }
 
-TestIp()
+// 本地端測試
+TestIp('local')
+
+// 線上測試
+//TestIp('online')
