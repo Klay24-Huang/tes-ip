@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  server:
+  test-ip-service:
     container_name: test-ip-service
     build:
       context: .
