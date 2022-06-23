@@ -32,7 +32,7 @@ function TestIp(env = 'local', requestCount = 120, ) {
 }
 
 // 本地端測試
-TestIp('local')
+//TestIp('local')
 
 // 線上測試
 //TestIp('online')

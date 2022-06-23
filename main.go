@@ -37,7 +37,9 @@ func getCountHandler(w http.ResponseWriter, r *http.Request) {
 
 // 紀錄次數
 type visitor struct {
-	count      int
+	// 一分鐘內同ip的登入次數
+	count int
+	// 第一次
 	recordTIme time.Time
 }
 
